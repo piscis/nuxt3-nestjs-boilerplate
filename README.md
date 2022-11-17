@@ -16,8 +16,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 - [x] Setup ESLint and Prettier to check and format code as recommended by Vue, Nuxt and Tailwind CSS
 - [x] Setup [Husky](https://typicode.github.io/husky/) with [lint-staged](https://github.com/okonet/lint-staged)
 
-- [ ] HTTP Basic access authentication for develop, staging or stage environments (server/middleware/basicAuth.ts)
-- [ ] Github Action for automated CI/CD to remote server using SSH
+- [x] HTTP Basic access authentication for develop, staging or stage environments (server/middleware/basicAuth.ts)
+- [x] Github Action for testing PR's
 
 ## Setup
 
