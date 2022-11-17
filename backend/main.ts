@@ -2,28 +2,28 @@ import "reflect-metadata";
 import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app/app.module";
 import { INestApplication } from "@nestjs/common";
+import { Request, NextFunction, Response } from "express";
 
-export module Backend {
+let app: INestApplication;
 
-  let app: INestApplication;
+export const getApp = async () => {
+  if (!app) {
+    app = await NestFactory.create<INestApplication>(AppModule, {
+      bodyParser: false,
+    });
 
-  export async function getApp() {
-    if (!app) {
-      app = await NestFactory.create<INestApplication>(
-        AppModule,
-        { bodyParser: false }
-      );
+    app.setGlobalPrefix("api");
 
-      app.setGlobalPrefix("api");
-
-      await app.init();
-    }
-
-    return app;
+    await app.init();
   }
 
-  export async function getListener(req, res, next) {
-    const app = await getApp();
-    app.getHttpAdapter().getInstance().handle(req, res, next);
-  }
-}
+  return app;
+};
+
+export const getListener = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  await app.getHttpAdapter().getInstance().handle(req, res, next);
+};
