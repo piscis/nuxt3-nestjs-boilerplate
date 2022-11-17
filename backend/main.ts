@@ -20,7 +20,7 @@ export const getApp = async () => {
   return app;
 };
 
-export const getListener = async (
+export const bindHandler = async (
   req: Request,
   res: Response,
   next: NextFunction
