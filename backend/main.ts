@@ -25,5 +25,6 @@ export const bindHandler = async (
   res: Response,
   next: NextFunction
 ) => {
+  const app = await getApp();
   await app.getHttpAdapter().getInstance().handle(req, res, next);
 };
