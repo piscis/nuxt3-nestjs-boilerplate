@@ -25,8 +25,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     authUser: "project",
-    authPass: "project",
-    environment: "develop",
+    authPass: "prodject",
+    environment: "deveelop",
     buildAt: "",
   },
   telemetry: false,
