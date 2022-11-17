@@ -1,7 +1,7 @@
 import { Controller, Get, Param } from "@nestjs/common";
 
 @Controller("randomNumber")
-export class AppController { {
+export class AppController {
   @Get()
   randomNumber() {
     return Math.random() * 100;
