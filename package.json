@@ -11,7 +11,7 @@
   },
   "lint-staged": {
     "*.{vue,ts}": [
-      "npm run lint"
+      "pnpm run lint"
     ]
   },
   "dependencies": {
