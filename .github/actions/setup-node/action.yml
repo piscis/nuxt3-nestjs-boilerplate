@@ -1,0 +1,26 @@
+name: Setup Node
+description: "Install NodeJS and it's dependencies"
+inputs:
+  node-version:
+    description: 'The version of nodejs'
+    required: false
+    default: "16"
+  package-manager:
+    description: 'Name of the package manager'
+    required: false
+    default: "pnpm"
+runs:
+  using: "composite"
+  steps:
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 7
+        run_install: false
+    - name: Install NodeJS
+      uses: actions/setup-node@v3
+      with:
+        node-version: "${{ inputs.node-version }}"
+        cache: "${{ inputs.package-manager }}"
+    - name: Install dependencies
+      shell: bash
+      run: pnpm i

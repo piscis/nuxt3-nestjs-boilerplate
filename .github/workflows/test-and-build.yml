@@ -1,0 +1,22 @@
+name: Test & Build
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  TestPR:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup
+        uses: ./.github/actions/setup-node
+
+      - name: Lint resume 👀
+        run: pnpm lint 
+
+      - name: Build App
+        shell: bash
+        run: pnpm build
