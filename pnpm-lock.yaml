@@ -22,7 +22,7 @@ specifiers:
   lint-staged: ^13.0.3
   nuxt: ^3.0.0
   nuxt-icon: ^0.1.7
-  nuxt-security: ^0.7.0
+  nuxt-security: ^0.8.0
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.13
   reflect-metadata: ^0.1.13
@@ -56,7 +56,7 @@ devDependencies:
   lint-staged: 13.0.3
   nuxt: 3.0.0_eslint@8.27.0
   nuxt-icon: 0.1.7
-  nuxt-security: 0.7.0
+  nuxt-security: 0.8.0
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
   rimraf: 3.0.2
@@ -2038,6 +2038,13 @@ packages:
 
   /base64-js/1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
+
+  /basic-auth/2.0.1:
+    resolution: {integrity: sha512-NF+epuEdnUYVlGuhaxbbq+dvJttwLnGY+YixlXlME5KpQ5W3CnXA5cVTneY3SPbPDRkcjMbifrwmFYcClgOZeg==}
+    engines: {node: '>= 0.8'}
+    dependencies:
+      safe-buffer: 5.1.2
+    dev: true
 
   /big.js/5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
@@ -5488,11 +5495,12 @@ packages:
       - vue
     dev: true
 
-  /nuxt-security/0.7.0:
-    resolution: {integrity: sha512-+QVvskPCHwNUWPsYuz4ndt5u37Eg+rkeKnyEhQ3qa1Pq9vFV6viswIfHm7pfYRK/eOTT840kFAnTaO97tMytiw==}
+  /nuxt-security/0.8.0:
+    resolution: {integrity: sha512-+KpQQkPsuhRuFhh/X7X1jdB152d2qD3XXUC8riwYsBZNXHM8uo/4sCxELH3/yY1ckr/Z8TRma1xcK99e/M4CiA==}
     dependencies:
       '@nozomuikuta/h3-cors': 0.1.8
       '@nuxt/kit': 3.0.0
+      basic-auth: 2.0.1
       limiter: 2.1.0
       memory-cache: 0.2.0
       xss: 1.0.14
