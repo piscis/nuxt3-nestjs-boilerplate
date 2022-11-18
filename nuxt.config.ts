@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     authUser: "project",
-    authPass: "prodject",
+    authPass: "project",
     environment: "deveelop",
     buildAt: "",
     public: {
