@@ -20,11 +20,12 @@ export const getApp = async () => {
   return app;
 };
 
-export const bindHandler = async (
+export const bindHandler = (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  const app = await getApp();
-  await app.getHttpAdapter().getInstance().handle(req, res, next);
+  getApp().then((app) => {
+    app.getHttpAdapter().getInstance().handle(req, res, next);
+  });
 };
