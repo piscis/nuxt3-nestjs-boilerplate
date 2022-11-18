@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 useHead({
   title: "Hello, World!",
-  titleTemplate: "%s - Nuxt3 Boilerplate",
+  titleTemplate: "%s - Nuxt3 / NestJS Boilerplate",
 });
 
 const config = useRuntimeConfig();
