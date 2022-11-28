@@ -2,10 +2,6 @@ export default defineEventHandler((event) => {
   const config = useRuntimeConfig();
   let allow = false;
 
-  if (config.authEnabled === false) {
-    allow = true;
-  }
-
   const base64Credentials = event.req.headers?.authorization?.split(" ")?.[1];
 
   if (base64Credentials) {
@@ -17,7 +13,7 @@ export default defineEventHandler((event) => {
     allow = username === config.authUser && password === config.authPass;
   }
 
-  if (!allow) {
+  if (!allow && config.authEnabled === true) {
     event.res.statusCode = 401;
     event.res.setHeader("WWW-Authenticate", 'Basic realm=""');
     event.res.end("Unauthorized");
