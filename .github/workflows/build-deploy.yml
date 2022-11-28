@@ -21,10 +21,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Test
+        shell: bash
+        run: |
+          pnpm run test
+
       - name: Build App
         shell: bash
         run: |
-          export NODE_ENV=production
           pnpm run build
 
       - name: Pack
@@ -35,7 +39,14 @@ jobs:
           files: |
             package.json
             pnpm-lock.yaml
-            .output
+            assets
+            backend
+            server
+            app.vue
+            nuxt.config.ts
+            tailwind.config.ts
+            tsconfig.ts
+            assets
             Dockerfile
             captain-definition
           outPath: deploy.tar

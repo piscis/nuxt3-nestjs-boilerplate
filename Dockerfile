@@ -4,19 +4,25 @@ RUN npm install -g pnpm
 # Setup
 RUN mkdir -p /usr/src/nuxt-app
 WORKDIR /usr/src/nuxt-app
-COPY package.json package.json
-COPY pnpm-lock.yaml pnpm-lock.yaml
-COPY .output .output
-
-# Dependncies
-RUN pnpm install --shamefully-hoist
-RUN pnpm prune --prod
+COPY . . 
 
 # Runtime
-ENV NUXT_HOST "0.0.0.0"
-ENV NUXT_PORT 3000
-ENV NODE_ENV "production"
-ENV NUXT_AUTH_ENABLED "false"
+ARG NUXT_HOST=${NUXT_HOST}
+ENV NUXT_HOST=${NUXT_HOST}
+
+ARG NUXT_PORT=${NUXT_PORT}
+ENV NUXT_PORT=${NUXT_PORT}
+
+ARG NUXT_AUTH_ENABLED=${NUXT_AUTH_ENABLED}
+ENV NUXT_AUTH_ENABLED=${NUXT_AUTH_ENABLED}
+
+# Dependencies
+RUN pnpm install --shamefully-hoist
+RUN pnpm build
+RUN pnpm prune --prod
+
+ARG NODE_ENV=${NODE_ENV}
+ENV NODE_ENV=${NODE_ENV}
 
 EXPOSE ${NUXT_PORT}
 
