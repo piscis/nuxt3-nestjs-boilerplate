@@ -25,7 +25,7 @@ ENV NODE_ENV=${NODE_ENV}
 
 RUN pnpm build
 
-RUN mv .output node_modules ../nuxt-app
+RUN mv .output node_modules ../nuxt-app/
 WORKDIR /usr/src/nuxt-app
 RUN rm -rf /usr/src/nuxt-app-src
 
