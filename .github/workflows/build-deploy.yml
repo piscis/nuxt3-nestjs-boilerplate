@@ -16,20 +16,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup
-        uses: ./.github/actions/setup-node
-        with:
-          node-version: ${{ matrix.node-version }}
+      # - name: Setup
+      #   uses: ./.github/actions/setup-node
+      #   with:
+      #     node-version: ${{ matrix.node-version }}
 
-      - name: Test
-        shell: bash
-        run: |
-          pnpm run test
+      # - name: Test
+      #   shell: bash
+      #   run: |
+      #     pnpm run test
 
-      - name: Build App
-        shell: bash
-        run: |
-          pnpm run build
+      # - name: Build App
+      #   shell: bash
+      #   run: |
+      #     pnpm run build
 
       - name: Pack
         uses: a7ul/tar-action@v1.1.2
