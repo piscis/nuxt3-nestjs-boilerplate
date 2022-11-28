@@ -2,8 +2,9 @@ FROM node:16
 RUN npm install -g pnpm
 
 # Setup
+RUN mkdir -p /usr/src/nuxt-app-src
 RUN mkdir -p /usr/src/nuxt-app
-WORKDIR /usr/src/nuxt-app
+WORKDIR /usr/src/nuxt-app-src
 COPY . . 
 
 # Runtime
@@ -18,10 +19,15 @@ ENV NUXT_AUTH_ENABLED=${NUXT_AUTH_ENABLED}
 
 # Dependencies
 RUN pnpm install --shamefully-hoist
-RUN pnpm build
 
 ARG NODE_ENV=${NODE_ENV}
 ENV NODE_ENV=${NODE_ENV}
+
+RUN pnpm build
+
+RUN mv .output node_modules ../nuxt-app
+WORKDIR /usr/src/nuxt-app
+RUN rm -rf /usr/src/nuxt-app-src
 
 EXPOSE ${NUXT_PORT}
 
