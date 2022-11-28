@@ -3,20 +3,27 @@ name: Test & Build
 on:
   pull_request:
     branches: [main]
+  workflow_dispatch:
+  
 
 jobs:
-  TestPR:
+  Test-and-build:
     runs-on: "ubuntu-latest"
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x]
     steps:
-      - name: Checkout 🛎
+      - name: Checkout
         uses: actions/checkout@master
 
       - name: Setup
         uses: ./.github/actions/setup-node
+        with:
+          node-version: ${{ matrix.node-version }}
 
-      - name: Lint resume 👀
+      - name: Lint
         run: pnpm lint 
 
-      - name: Build App
+      - name: Build
         shell: bash
         run: pnpm build
