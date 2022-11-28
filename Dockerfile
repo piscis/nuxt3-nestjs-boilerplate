@@ -1,6 +1,12 @@
 FROM node:16
 RUN npm install -g pnpm
 
+# Runtime
+ENV NUXT_HOST "0.0.0.0"
+ENV NUXT_PORT 3000
+ENV NODE_ENV "production"
+ENV ENABLE_AUTH "true"
+
 # Setup
 RUN mkdir -p /usr/src/nuxt-app
 WORKDIR /usr/src/nuxt-app
@@ -11,12 +17,6 @@ COPY .output .output
 # Dependncies
 RUN pnpm install --shamefully-hoist
 
-# Runtime
-ENV NUXT_HOST "0.0.0.0"
-ENV NUXT_PORT 3000
-ENV NODE_ENV "production"
-ENV ENABLE_AUTH "true"
-
-EXPOSE 3000
+EXPOSE ${NUXT_PORT}
 
 ENTRYPOINT ["node", ".output/server/index.mjs"]
