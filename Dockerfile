@@ -10,6 +10,7 @@ COPY .output .output
 
 # Dependncies
 RUN pnpm install --shamefully-hoist
+RUN pnpm prune --prod
 
 # Runtime
 ENV NUXT_HOST "0.0.0.0"
