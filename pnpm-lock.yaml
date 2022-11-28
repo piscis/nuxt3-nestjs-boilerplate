@@ -24,7 +24,7 @@ specifiers:
   nuxt-icon: ^0.1.7
   nuxt-security: ^0.8.0
   prettier: ^2.7.1
-  prettier-plugin-tailwindcss: ^0.1.13
+  prettier-plugin-tailwindcss: ^0.2.0
   reflect-metadata: ^0.1.13
   rimraf: ^3.0.2
   rxjs: ^7.2.0
@@ -58,7 +58,7 @@ devDependencies:
   nuxt-icon: 0.1.7
   nuxt-security: 0.8.0
   prettier: 2.7.1
-  prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
+  prettier-plugin-tailwindcss: 0.2.0_prettier@2.7.1
   rimraf: 3.0.2
   tailwindcss: 3.2.4
 
@@ -6382,8 +6382,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-tailwindcss/0.1.13_prettier@2.7.1:
-    resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
+  /prettier-plugin-tailwindcss/0.2.0_prettier@2.7.1:
+    resolution: {integrity: sha512-Ruqig/mdWCSpqdq9WK44nrmqM4BFWTzBPhPGwC5NK3coV9eZntEQPB84MGZbjAg0XQU02jVRHXNRPREBzxvM+A==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       prettier: '>=2.2.0'
