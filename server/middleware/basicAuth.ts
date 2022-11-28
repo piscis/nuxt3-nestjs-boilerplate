@@ -15,7 +15,7 @@ export default defineEventHandler((event) => {
     allow = username === config.authUser && password === config.authPass;
   }
 
-  if (!allow && config.authEnabled === true) {
+  if (!allow && process.env.ENABLE_AUTH === "true") {
     event.res.statusCode = 401;
     event.res.setHeader("WWW-Authenticate", 'Basic realm=""');
     event.res.end("Unauthorized");

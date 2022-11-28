@@ -12,12 +12,10 @@ COPY .output .output
 RUN pnpm install --shamefully-hoist
 
 # Runtime
-ENV NUXT_HOST=0.0.0.0
-ENV NUXT_PORT=3000
-ENV NODE_ENV="production"
-
-ARG ENABLE_AUTH=${ENABLE_AUTH}
-ENV ENABLE_AUTH=${ENABLE_AUTH}
+ENV NUXT_HOST "0.0.0.0"
+ENV NUXT_PORT 3000
+ENV NODE_ENV "production"
+ENV ENABLE_AUTH "true"
 
 EXPOSE 3000
 
