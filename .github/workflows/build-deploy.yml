@@ -45,7 +45,7 @@ jobs:
             app.vue
             nuxt.config.ts
             tailwind.config.ts
-            tsconfig.ts
+            tsconfig.json
             assets
             Dockerfile
             captain-definition
