@@ -1,6 +1,10 @@
 export default defineEventHandler((event) => {
   const config = useRuntimeConfig();
-  let allow = !["develop", "staging", "stage"].includes(config.environment);
+  let allow = false;
+
+  if (config.authEnabled === false) {
+    allow = true;
+  }
 
   const base64Credentials = event.req.headers?.authorization?.split(" ")?.[1];
 
