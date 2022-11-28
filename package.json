@@ -1,5 +1,9 @@
 {
   "name": "nuxt3-nestjs-boilerplate",
+  "repository": {
+    "url": "https://github.com/piscis/nuxt3-nestjs-boilerplate.git",
+    "type": "git"
+  },
   "private": true,
   "scripts": {
     "build": "nuxt build",
