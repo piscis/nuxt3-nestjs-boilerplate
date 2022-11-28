@@ -15,7 +15,7 @@ RUN pnpm install --shamefully-hoist
 ENV NUXT_HOST=0.0.0.0
 ENV NUXT_PORT=3000
 ENV NODE_ENV="production"
-ENV DISABLE_AUTH="true"
+ENV ENABLE_AUTH="false"
 
 EXPOSE 3000
 
