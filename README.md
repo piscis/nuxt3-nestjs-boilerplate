@@ -4,6 +4,9 @@ A Nuxt3 / NestJS Boilerplate starter boilerplate with a lot of useful features.
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+**Demo:** https://nuxt3-nestjs.piscis.io/
+**NestJS:** API Dummy Endpoint: https://nuxt3-nestjs.piscis.io/api/randomNumber/
+
 ## Features
 
 - [x] [Nuxt](https://v3.nuxtjs.org)
