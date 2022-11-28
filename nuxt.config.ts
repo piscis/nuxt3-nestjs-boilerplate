@@ -24,8 +24,9 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    authUser: process.env.AUTH_USER || "project",
-    authPass: process.env.AUTH_PASS || "project",
+    authEnabled: process.env.NUXT_AUTH_ENABLED === "true" ? true : false,
+    authUser: process.env.NUXT_AUTH_USER || "project",
+    authPass: process.env.NUXT_AUTH_PASS || "project",
     environment: process.env.NODE_ENV || "development",
     buildAt: "",
     public: {
