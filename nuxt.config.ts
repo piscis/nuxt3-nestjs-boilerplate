@@ -24,7 +24,6 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    authEnabled: process.env.ENABLE_AUTH === "true" ? true : false,
     authUser: process.env.AUTH_USER || "project",
     authPass: process.env.AUTH_PASS || "project",
     environment: process.env.NODE_ENV || "development",
