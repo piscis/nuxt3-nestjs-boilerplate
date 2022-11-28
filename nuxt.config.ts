@@ -24,9 +24,10 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    authUser: "project",
-    authPass: "project",
-    environment: "develop",
+    authEnabled: process.env.DISABLE_AUTH !== "true",
+    authUser: process.env.AUTH_USER || "project",
+    authPass: process.env.AUTH_PASS || "project",
+    environment: process.env.NODE_ENV || "development",
     buildAt: "",
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE || "http://localhost:3000",
