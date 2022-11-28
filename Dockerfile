@@ -19,7 +19,6 @@ ENV NUXT_AUTH_ENABLED=${NUXT_AUTH_ENABLED}
 # Dependencies
 RUN pnpm install --shamefully-hoist
 RUN pnpm build
-RUN pnpm prune --prod
 
 ARG NODE_ENV=${NODE_ENV}
 ENV NODE_ENV=${NODE_ENV}
