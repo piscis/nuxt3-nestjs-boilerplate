@@ -7,7 +7,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare && pnpm dlx husky install",
-    "lint": "eslint --ext .ts,.vue --ignore-path .eslintignore . --fix"
+    "lint": "eslint --ext .ts,.vue --ignore-path .eslintignore . --fix",
+    "test": "echo 'TODO'"
   },
   "lint-staged": {
     "*.{vue,ts}": [
