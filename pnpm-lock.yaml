@@ -22,7 +22,7 @@ specifiers:
   lint-staged: ^13.0.3
   nuxt: ^3.0.0
   nuxt-icon: ^0.1.7
-  nuxt-security: ^0.8.0
+  nuxt-security: ^0.9.0
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.2.0
   reflect-metadata: ^0.1.13
@@ -56,7 +56,7 @@ devDependencies:
   lint-staged: 13.0.3
   nuxt: 3.0.0_eslint@8.27.0
   nuxt-icon: 0.1.7
-  nuxt-security: 0.8.0
+  nuxt-security: 0.9.0
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.2.0_prettier@2.7.1
   rimraf: 3.0.2
@@ -817,11 +817,13 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@nozomuikuta/h3-cors/0.1.8:
+  /@nozomuikuta/h3-cors/0.1.8_defu@6.1.1:
     resolution: {integrity: sha512-qWe2mUfnjxaBwTYKNM/9GrGK0nciyynn5Lk/sv8wYpKbloaoJFB98onBWMTotV5e/l8CCoelsr1oz4qYb7FdHg==}
     peerDependencies:
       defu: ^6.1.0
       h3: ^0.8.6
+    dependencies:
+      defu: 6.1.1
     dev: true
 
   /@nuxt/devalue/2.0.0:
@@ -5495,17 +5497,18 @@ packages:
       - vue
     dev: true
 
-  /nuxt-security/0.8.0:
-    resolution: {integrity: sha512-+KpQQkPsuhRuFhh/X7X1jdB152d2qD3XXUC8riwYsBZNXHM8uo/4sCxELH3/yY1ckr/Z8TRma1xcK99e/M4CiA==}
+  /nuxt-security/0.9.0:
+    resolution: {integrity: sha512-t9u6MKKEQYdPt/Pm+cJBbKgTMggoRe92Jyt0NGMamhOm/Zh03gwQ+/uJ9CefEe+wNTRNm5iPCfvFt617Q0l2lg==}
     dependencies:
-      '@nozomuikuta/h3-cors': 0.1.8
+      '@nozomuikuta/h3-cors': 0.1.8_defu@6.1.1
       '@nuxt/kit': 3.0.0
       basic-auth: 2.0.1
+      defu: 6.1.1
       limiter: 2.1.0
       memory-cache: 0.2.0
+      pathe: 1.0.0
       xss: 1.0.14
     transitivePeerDependencies:
-      - defu
       - h3
       - rollup
       - supports-color
