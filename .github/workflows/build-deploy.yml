@@ -52,7 +52,7 @@ jobs:
           outPath: deploy.tar
 
       - name: Deploy App
-        uses: caprover/deploy-from-github@v1.0.1
+        uses: caprover/deploy-from-github@v1.1.0
         with:
           server: "${{ secrets.CAPROVER_SERVER }}"
           app: "${{ secrets.APP_NAME }}"
