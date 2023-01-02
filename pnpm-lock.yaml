@@ -22,7 +22,7 @@ specifiers:
   lint-staged: ^13.0.3
   nuxt: ^3.0.0
   nuxt-icon: ^0.1.7
-  nuxt-security: ^0.9.0
+  nuxt-security: ^0.10.0
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.2.0
   reflect-metadata: ^0.1.13
@@ -56,7 +56,7 @@ devDependencies:
   lint-staged: 13.0.3
   nuxt: 3.0.0_eslint@8.27.0
   nuxt-icon: 0.1.7
-  nuxt-security: 0.9.0
+  nuxt-security: 0.10.0
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.2.0_prettier@2.7.1
   rimraf: 3.0.2
@@ -5497,8 +5497,8 @@ packages:
       - vue
     dev: true
 
-  /nuxt-security/0.9.0:
-    resolution: {integrity: sha512-t9u6MKKEQYdPt/Pm+cJBbKgTMggoRe92Jyt0NGMamhOm/Zh03gwQ+/uJ9CefEe+wNTRNm5iPCfvFt617Q0l2lg==}
+  /nuxt-security/0.10.0:
+    resolution: {integrity: sha512-+wAnVnDcuOxzMsCd8fCmMCFULUmdzWICNEiggq/+F8fDmc5bs1v5JjbIttGIeV6FLL2Kpz3HfKuYfzCRBgRdQA==}
     dependencies:
       '@nozomuikuta/h3-cors': 0.1.8_defu@6.1.1
       '@nuxt/kit': 3.0.0
