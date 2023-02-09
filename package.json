@@ -7,8 +7,8 @@
     "type": "git"
   },
   "engines": {
-    "pnpm": "7",
-    "node": "18"
+    "pnpm": "7.x",
+    "node": "18.x"
   },
   "scripts": {
     "build": "nuxt build",
