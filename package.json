@@ -1,10 +1,15 @@
 {
   "name": "nuxt3-nestjs-boilerplate",
+  "private": true,
+  "license": "MIT",
   "repository": {
     "url": "https://github.com/piscis/nuxt3-nestjs-boilerplate.git",
     "type": "git"
   },
-  "private": true,
+  "engines": {
+    "pnpm": "7",
+    "node": "18"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -15,15 +20,6 @@
     "test:watch": "nuxi test --dev --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
-  },
-  "lint-staged": {
-    "*.{vue,ts}": [
-      "pnpm run lint"
-    ]
-  },
-  "engines": {
-    "pnpm": "7",
-    "node": "18"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
@@ -51,5 +47,9 @@
     "typescript": "^4.9.5",
     "vitest": "^0.28.4"
   },
-  "license": "MIT"
+  "lint-staged": {
+    "*.{vue,ts}": [
+      "pnpm run lint"
+    ]
+  }
 }
