@@ -33,7 +33,7 @@ Make sure to install the dependencies:
 
 ```bash
 # pnpm
-pnpm install --shamefully-hoist
+pnpm install
 ```
 
 ## Development Server
@@ -56,6 +56,18 @@ Locally preview production build:
 
 ```bash
 pnpm preview
+```
+
+## Testing
+
+```bash
+pnpm test:watch
+```
+
+## Lint
+
+```bash
+pnpm lint:fix
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
