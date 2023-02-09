@@ -1,29 +1,29 @@
 <script lang="ts" setup>
 useHead({
-  title: "Hello, World!",
-  titleTemplate: "%s - Nuxt3 / NestJS Boilerplate",
-});
+  title: 'Hello, World!',
+  titleTemplate: '%s - Nuxt3 / NestJS Boilerplate',
+})
 
-const config = useRuntimeConfig();
+const config = useRuntimeConfig()
 
 const {
   data: serverNumber,
   pending,
   refresh,
-} = await useFetch("/api/randomNumber", {
+} = await useFetch('/api/randomNumber', {
   baseURL: config.public.apiBase,
-});
+})
 
 const fetchRandomNumber = async () => {
-  refresh();
-};
+  refresh()
+}
 </script>
 
 <template>
   <div class="flex min-h-screen flex-col">
     <main class="flex grow items-center justify-center">
       <div class="text-center">
-        <Icon name="logos:nuxt-icon" class="mb-5" size="80"></Icon>
+        <Icon name="logos:nuxt-icon" class="mb-5" size="80" />
         <h1 class="font-display mb-2 flex items-center text-5xl">
           <b class="text-primary p-4 pt-2">Hello, World!</b>
         </h1>
