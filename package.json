@@ -11,8 +11,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare && pnpm dlx husky install",
-    "lint": "eslint --ext .ts,.vue --ignore-path .eslintignore . --fix",
-    "test": "echo 'TODO'"
+    "test": "nuxi test",
+    "test:watch": "nuxi test --dev --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "lint-staged": {
     "*.{vue,ts}": [
