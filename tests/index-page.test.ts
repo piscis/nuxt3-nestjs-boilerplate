@@ -6,8 +6,8 @@ describe('Index Page', () => {
   beforeAll(async () => {
     doc = await $fetch('/')
   })
-  it.skip('Renders the index page with a hello button', async () => {
-    expect(doc).toContain('q-btn__content')
-    expect(doc).toContain('HELLO')
+  it('Renders the index page with a hello button', async () => {
+    expect(doc).toContain('Can you see me?')
+    expect(doc).toContain('Hello, World!')
   })
 })
