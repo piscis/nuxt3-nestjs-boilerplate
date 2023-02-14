@@ -23,9 +23,9 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nestjs/common": "^9.3.8",
-    "@nestjs/core": "^9.3.8",
-    "@nestjs/platform-express": "^9.3.8",
+    "@nestjs/common": "^9.3.9",
+    "@nestjs/core": "^9.3.9",
+    "@nestjs/platform-express": "^9.3.9",
     "@nestjs/schematics": "^9.0.4",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.2",
     "@nestjs/cli": "^9.2.0",
-    "@nestjs/testing": "^9.3.8",
+    "@nestjs/testing": "^9.3.9",
     "@nuxt/test-utils": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.4.0",
     "@vueuse/nuxt": "^9.12.0",
