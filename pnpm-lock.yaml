@@ -15,12 +15,12 @@ specifiers:
   husky: ^8.0.3
   lint-staged: ^13.1.2
   nuxt: ^3.2.0
-  nuxt-icon: ^0.2.11
+  nuxt-icon: ^0.3.2
   nuxt-security: ^0.10.2
   reflect-metadata: ^0.1.13
   rimraf: ^4.1.2
   rxjs: ^7.8.0
-  tailwindcss: ^3.2.6
+  tailwindcss: ^3.2.7
   typescript: ^4.9.5
   vitest: ^0.28.5
 
@@ -43,10 +43,10 @@ devDependencies:
   husky: 8.0.3
   lint-staged: 13.1.2
   nuxt: 3.2.0_7kw3g6rralp5ps6mg3uyzz6azm
-  nuxt-icon: 0.2.11
+  nuxt-icon: 0.3.2
   nuxt-security: 0.10.2
   rimraf: 4.1.2
-  tailwindcss: 3.2.6
+  tailwindcss: 3.2.7
   typescript: 4.9.5
   vitest: 0.28.5
 
@@ -1582,8 +1582,8 @@ packages:
       postcss: 8.4.21
       postcss-custom-properties: 13.1.3_postcss@8.4.21
       postcss-nesting: 11.1.0_postcss@8.4.21
-      tailwind-config-viewer: 1.7.2_tailwindcss@3.2.6
-      tailwindcss: 3.2.6
+      tailwind-config-viewer: 1.7.2_tailwindcss@3.2.7
+      tailwindcss: 3.2.7
       ufo: 1.0.1
     transitivePeerDependencies:
       - rollup
@@ -6229,8 +6229,8 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-icon/0.2.11:
-    resolution: {integrity: sha512-mHFgTMrf+CzG7l6cdVQ7vF2XaXz8fs53QC6bk+zVZEHBCCwFtRoG0H+62y+y0iAo2+cD4VYmvsAiRMKIlIGxVA==}
+  /nuxt-icon/0.3.2:
+    resolution: {integrity: sha512-066pfova2nE9GZDvHE9oMkqJCwsnJvOZKU2FOSzRpjfXupH3UPtP9Zw8+C2wvZ82Nel6fuRoIUNQh5Sx8ZeQrQ==}
     dependencies:
       '@iconify/vue': 4.1.0
       '@nuxt/kit': 3.2.0
@@ -7905,7 +7905,7 @@ packages:
     engines: {node: '>=0.10'}
     dev: true
 
-  /tailwind-config-viewer/1.7.2_tailwindcss@3.2.6:
+  /tailwind-config-viewer/1.7.2_tailwindcss@3.2.7:
     resolution: {integrity: sha512-3JJCeAAlvG+i/EBj+tQb0x4weo30QjdSAo4hlcnVbtD+CkpzHi/UwU9InbPMcYH+ESActoa2kCyjpLEyjEkn0Q==}
     engines: {node: '>=8'}
     hasBin: true
@@ -7920,13 +7920,13 @@ packages:
       open: 7.4.2
       portfinder: 1.0.32
       replace-in-file: 6.3.5
-      tailwindcss: 3.2.6
+      tailwindcss: 3.2.7
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /tailwindcss/3.2.6:
-    resolution: {integrity: sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==}
+  /tailwindcss/3.2.7:
+    resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     dependencies:
