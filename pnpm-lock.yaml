@@ -18,7 +18,7 @@ specifiers:
   nuxt-icon: ^0.3.2
   nuxt-security: ^0.11.0
   reflect-metadata: ^0.1.13
-  rimraf: ^4.2.0
+  rimraf: ^4.3.0
   rxjs: ^7.8.0
   tailwindcss: ^3.2.7
   typescript: ^4.9.5
@@ -45,7 +45,7 @@ devDependencies:
   nuxt: 3.2.3_ycpbpc6yetojsgtrx3mwntkhsu
   nuxt-icon: 0.3.2
   nuxt-security: 0.11.0
-  rimraf: 4.2.0
+  rimraf: 4.3.0
   tailwindcss: 3.2.7
   typescript: 4.9.5
   vitest: 0.29.2
@@ -7675,8 +7675,8 @@ packages:
     hasBin: true
     dev: true
 
-  /rimraf/4.2.0:
-    resolution: {integrity: sha512-tPt+gLORNVqRCk0NwuJ5SlMEcOGvt4CCU8sUPqgCFtCbnoNCTd9Q6vq7JlBbxQlACiH14OR28y7piA2Bak9Sxw==}
+  /rimraf/4.3.0:
+    resolution: {integrity: sha512-5qVDXPbByA1qSJEWMv1qAwKsoS22vVpsL2QyxCKBw4gf6XiFo1K3uRLY6uSOOBFDwnqAZtnbILqWKKlzh8bkGg==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
