@@ -37,7 +37,7 @@
     "@nuxt/test-utils": "^3.2.3",
     "@nuxtjs/tailwindcss": "^6.4.1",
     "@vueuse/nuxt": "^9.13.0",
-    "eslint": "^8.35.0",
+    "eslint": "^8.36.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "nuxt": "^3.2.3",
