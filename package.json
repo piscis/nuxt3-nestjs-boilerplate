@@ -39,7 +39,7 @@
     "@vueuse/nuxt": "^9.13.0",
     "eslint": "^8.35.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^13.2.0",
     "nuxt": "^3.2.3",
     "nuxt-icon": "^0.3.2",
     "nuxt-security": "^0.12.0",
