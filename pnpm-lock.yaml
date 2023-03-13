@@ -9,7 +9,7 @@ specifiers:
   '@nestjs/schematics': ^9.0.4
   '@nestjs/testing': ^9.3.9
   '@nuxt/test-utils': ^3.2.3
-  '@nuxtjs/tailwindcss': ^6.4.1
+  '@nuxtjs/tailwindcss': ^6.5.0
   '@vueuse/nuxt': ^9.13.0
   eslint: ^8.36.0
   husky: ^8.0.3
@@ -37,7 +37,7 @@ devDependencies:
   '@nestjs/cli': 9.2.0
   '@nestjs/testing': 9.3.9_yqmogfxzeu633isbftgaoi4ho4
   '@nuxt/test-utils': 3.2.3
-  '@nuxtjs/tailwindcss': 6.4.1
+  '@nuxtjs/tailwindcss': 6.5.0
   '@vueuse/nuxt': 9.13.0_nuxt@3.2.3
   eslint: 8.36.0
   husky: 8.0.3
@@ -1911,8 +1911,8 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@nuxtjs/tailwindcss/6.4.1:
-    resolution: {integrity: sha512-b8c6h+iiHJJ/rw/IirmYlF0RaIGVIVFmZXdHYPuDW/Mf6WAEz8IkAicyO5gRL3jYKp98kld067XPGsumDhaVVg==}
+  /@nuxtjs/tailwindcss/6.5.0:
+    resolution: {integrity: sha512-Ilkph6jH+eQxuSaZ7DDx3eIHLaGz+9Nbs5qOKpwgGBFKnilqMpvxE9V5ji4V0aH2vZBN3HSlpxbrIr07t6uy8Q==}
     dependencies:
       '@nuxt/kit': 3.2.3
       '@nuxt/postcss8': 1.1.3
