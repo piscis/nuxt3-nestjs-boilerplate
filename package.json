@@ -1,7 +1,7 @@
 {
   "name": "nuxt3-nestjs-boilerplate",
   "private": true,
-  "packageManager": "pnpm@7.30.1",
+  "packageManager": "pnpm@7.30.2",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/piscis/nuxt3-nestjs-boilerplate.git",
