@@ -1,3 +1,5 @@
+import { Buffer } from 'node:buffer'
+
 export default defineEventHandler((event) => {
   const config = useRuntimeConfig()
   let allow = false
