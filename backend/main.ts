@@ -6,7 +6,7 @@ import { AppModule } from './app/app.module'
 
 let app: INestApplication
 
-export const getApp = async () => {
+export async function getApp() {
   if (!app) {
     app = await NestFactory.create<INestApplication>(AppModule, {
       bodyParser: false,
@@ -20,11 +20,9 @@ export const getApp = async () => {
   return app
 }
 
-export const bindHandler = (
-  req: Request,
+export function bindHandler(req: Request,
   res: Response,
-  next: NextFunction,
-) => {
+  next: NextFunction) {
   getApp().then((app) => {
     app.getHttpAdapter().getInstance().handle(req, res, next)
   })
