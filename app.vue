@@ -14,7 +14,7 @@ const {
   baseURL: config.public.apiBase,
 })
 
-const fetchRandomNumber = async () => {
+async function fetchRandomNumber() {
   refresh()
 }
 </script>
