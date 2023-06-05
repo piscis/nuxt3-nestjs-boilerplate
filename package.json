@@ -1,14 +1,14 @@
 {
   "name": "nuxt3-nestjs-boilerplate",
   "private": true,
-  "packageManager": "pnpm@7.30.5",
+  "packageManager": "pnpm@8.6.1",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/piscis/nuxt3-nestjs-boilerplate.git",
     "type": "git"
   },
   "engines": {
-    "pnpm": "7.x",
+    "pnpm": "8.x",
     "node": "18.x"
   },
   "scripts": {
