@@ -23,17 +23,17 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nestjs/common": "^9.4.3",
-    "@nestjs/core": "^9.4.3",
-    "@nestjs/platform-express": "^9.4.3",
-    "@nestjs/schematics": "^9.2.0",
+    "@nestjs/common": "^10.2.10",
+    "@nestjs/core": "^10.2.10",
+    "@nestjs/platform-express": "^10.2.10",
+    "@nestjs/schematics": "^10.0.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.6",
     "@nestjs/cli": "^9.5.0",
-    "@nestjs/testing": "^9.4.3",
+    "@nestjs/testing": "^10.2.10",
     "@nuxt/test-utils": "^3.5.3",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@vueuse/nuxt": "^10.2.1",
