@@ -1,7 +1,7 @@
 {
   "name": "nuxt3-nestjs-boilerplate",
   "private": true,
-  "packageManager": "pnpm@8.6.5",
+  "packageManager": "pnpm@8.11.0",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/piscis/nuxt3-nestjs-boilerplate.git",
@@ -31,22 +31,22 @@
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.6",
+    "@antfu/eslint-config": "^0.43.1",
     "@nestjs/cli": "^9.5.0",
     "@nestjs/testing": "^9.4.3",
     "@nuxt/test-utils": "^3.5.3",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@vueuse/nuxt": "^10.2.1",
-    "eslint": "^8.44.0",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@vueuse/nuxt": "^10.6.1",
+    "eslint": "^8.54.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
+    "lint-staged": "^13.3.0",
     "nuxt": "^3.5.3",
-    "nuxt-icon": "^0.4.2",
-    "nuxt-security": "^0.13.1",
-    "rimraf": "^5.0.1",
-    "tailwindcss": "^3.3.2",
-    "typescript": "^5.1.6",
-    "vitest": "^0.32.2"
+    "nuxt-icon": "^0.6.6",
+    "nuxt-security": "^0.14.4",
+    "rimraf": "^5.0.5",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.3.2",
+    "vitest": "^0.34.6"
   },
   "lint-staged": {
     "*.{vue2,ts2}": [
